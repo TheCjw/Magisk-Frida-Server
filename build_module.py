@@ -89,14 +89,15 @@ cacheModule=false
                  "common/file_contexts_image",
                  "META-INF/com/google/android/update-binary",
                  "META-INF/com/google/android/updater-script",
-                 "system/xbin/frida_server",
-                 "system/xbin/frida_server64",
-                 "system/xbin/debug_server",
-                 "system/xbin/debug_server64",
-                 "system/xbin/tcpdump",
                  "config.sh",
                  "changelog.txt",
                  "module.prop"]
+
+    for dp, dn, fn in os.walk("./system"):
+        for f in fn:
+            if f == "placeholder":
+                continue
+            file_list.append(os.path.join(dp, f))
 
     print("Building Magisk module.")
     with zipfile.ZipFile(os.path.join(cache_path,
