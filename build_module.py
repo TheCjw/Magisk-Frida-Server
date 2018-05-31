@@ -62,7 +62,7 @@ cacheModule=false
                version_code=version.replace(".", ""),
                notes=release_notes)
     with open("module.prop", "w") as f:
-        f.write(os.path.join(base_path, module_prop))
+        f.write(module_prop)
 
     frida_server_32 = "frida-server-{0}-android-arm.xz".format(version)
     frida_server_64 = "frida-server-{0}-android-arm64.xz".format(version)
