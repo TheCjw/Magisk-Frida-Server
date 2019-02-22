@@ -1,7 +1,9 @@
 
-# Magisk Frida-Server module for Android
+# Magisk Frida-Server module for Android(DEPRECATED)
 
 [![Build Status](https://api.travis-ci.org/TheCjw/Magisk-Frida-Server.svg?branch=master)](https://travis-ci.org/TheCjw/Magisk-Frida-Server)
+
+**This repository is no longer being updated. Please use https://github.com/AeonLucid/MagiskFrida**
 
 Distribute frida server in magisk module.
 
